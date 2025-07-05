@@ -1,0 +1,28 @@
+server:
+  host: "localhost"
+  port: 8080
+  
+database:
+  host: "localhost"
+  port: 5432
+  name: "postgres"
+  user: "postgres"
+  password: "postgres"
+  
+cache:
+  host: "localhost"
+  port: 6379
+  password: ""
+  db: 0
+  
+log:
+  level: "info"
+  format: "json"
+
+log_parsing:
+  database_type: "postgresql"
+  log_file_path: "/opt/homebrew/var/postgresql@17/log/postgresql-2025-07-05_173004.log"
+  poll_interval: "5s"
+  batch_size: 100
+  max_retries: 3
+  enable_statistics: true 

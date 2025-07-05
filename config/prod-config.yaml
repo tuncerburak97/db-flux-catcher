@@ -1,0 +1,28 @@
+server:
+  host: "0.0.0.0"
+  port: 8080
+  
+database:
+  host: "your-postgres-host"
+  port: 5432
+  name: "db_flux_cather"
+  user: "your-db-user"
+  password: "your-db-password"
+  
+cache:
+  host: "your-redis-host"
+  port: 6379
+  password: "your-redis-password"
+  db: 0
+  
+log:
+  level: "info"
+  format: "json"
+
+log_parsing:
+  database_type: "postgresql"
+  log_file_path: "/var/log/postgresql/postgresql-17-main.log"
+  poll_interval: "5s"
+  batch_size: 100
+  max_retries: 3
+  enable_statistics: true 
